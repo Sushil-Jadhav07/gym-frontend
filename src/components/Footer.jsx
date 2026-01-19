@@ -14,18 +14,18 @@ function Footer() {
         <div className="max-w-sm space-y-4">
           <div className="flex items-center gap-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500 text-slate-950 font-bold">
-              IC
+              GP
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-xs uppercase tracking-[0.3em] text-emerald-400">
-                Ironcore
+                GymPro
               </span>
-              <span className="text-lg font-semibold text-slate-50">IRONCORE GYM</span>
+              <span className="text-lg font-semibold text-slate-50">gamma</span>
             </div>
           </div>
           <p className="text-sm text-slate-400">
-            Premium strength and conditioning facility focused on performance, longevity, and sustainable
-            body transformations.
+            Modern gym admin platform that keeps your members, classes, staff, and payments organized in
+            one clean dashboard.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ function Footer() {
             <p className="text-sm text-slate-400">
               +1 (555) 013-4521
               <br />
-              coach@ironcoregym.com
+              coach@gammagym.com
             </p>
             <div className="flex gap-3 text-slate-400">
               <a href="#" aria-label="Instagram" className="hover:text-emerald-300">
@@ -98,9 +98,9 @@ function Footer() {
       </div>
 
       <div className="mx-auto mt-10 flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-slate-800 pt-6 text-xs text-slate-500 md:flex-row">
-        <p>© {new Date().getFullYear()} Ironcore Gym. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} gamma. All rights reserved.</p>
         <p className="text-[11px]">
-          Built for lifters who want strength, aesthetics, and performance in one place.
+          Built for gym teams who want clear operations, better insight, and happier members.
         </p>
       </div>
     </Motion.footer>

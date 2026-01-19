@@ -64,13 +64,13 @@ function About() {
           className="mx-auto max-w-6xl space-y-6"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-400">
-            About Ironcore
+            About gamma
           </p>
           <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl">
             Built for people who take their training seriously.
           </h1>
           <p className="max-w-3xl text-sm text-slate-400 md:text-base">
-            Ironcore Gym was created for lifters and athletes who were tired of overcrowded commercial
+            Gamma was created for lifters and athletes who were tired of overcrowded commercial
             gyms and generic programs. Our focus is premium coaching, world-class equipment, and a
             community that expects more from itself.
           </p>
@@ -91,7 +91,7 @@ function About() {
               eyebrow="Our Story"
               title="From a small strength club to a full performance facility."
               align="left"
-              description="Ironcore started as a small strength club training out of a single squat rack. Today, we are a full performance facility dedicated to strength, conditioning, and transformation."
+              description="gamma started as a small strength club training out of a single squat rack. Today, we are a full performance facility dedicated to strength, conditioning, and transformation."
             />
             <p className="text-sm text-slate-400 md:text-base">
               Every piece of equipment and every program is chosen with a purpose. Members come from all
@@ -103,10 +103,10 @@ function About() {
             className="relative rounded-3xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/10 via-slate-950 to-slate-950 p-6 shadow-[0_24px_90px_rgba(6,95,70,0.6)]"
           >
             <p className="text-sm text-emerald-100">
-              “We did not build Ironcore to be the biggest gym in the city. We built it to be the most
+              “We did not build gamma to be the biggest gym in the city. We built it to be the most
               intentional place to train.”
             </p>
-            <p className="mt-4 text-xs text-emerald-300">Founder, Ironcore Gym</p>
+            <p className="mt-4 text-xs text-emerald-300">Founder, Gamma</p>
           </Motion.div>
         </div>
       </Motion.section>
@@ -189,7 +189,7 @@ function About() {
           <SectionTitle
             eyebrow="Facility"
             title="A Space Designed For Serious Training"
-            description="From comp-grade racks to turf and sleds, every corner of Ironcore is built to support your training, not distract from it."
+            description="From comp-grade racks to turf and sleds, every corner of gamma is built to support your training, not distract from it."
           />
           <div className="grid gap-6 md:grid-cols-3">
             <IconCard

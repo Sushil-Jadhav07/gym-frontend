@@ -4,10 +4,10 @@ import CTAButton from './CTAButton'
 import { fadeIn } from './MotionWrappers'
 
 const links = [
-  { href: '#top', label: 'Home' },
-  { href: '#programs', label: 'Programs' },
-  { href: '#why', label: 'Why Us' },
-  { href: '#book', label: 'Book' },
+  { href: '#top', label: 'Overview' },
+  { href: '#programs', label: 'Features' },
+  { href: '#why', label: 'Why GymPro' },
+  { href: '#book', label: 'Get Demo' },
 ]
 
 function Navbar() {
@@ -46,13 +46,13 @@ function Navbar() {
       >
         <div className="flex items-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500 text-slate-950 font-bold">
-            IC
+            GP
           </div>
           <div className="flex flex-col leading-none">
             <span className="text-xs uppercase tracking-[0.3em] text-emerald-400">
-              Ironcore
+              GymPro
             </span>
-            <span className="text-lg font-semibold text-slate-50">IRONCORE GYM</span>
+            <span className="text-lg font-semibold text-slate-50">gamma</span>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ function Navbar() {
         </div>
 
         <div className="hidden md:flex">
-          <CTAButton onClick={() => scrollToSection('book')}>Book Now</CTAButton>
+          <CTAButton onClick={() => scrollToSection('book')}>Book Demo</CTAButton>
         </div>
 
         <button
@@ -132,7 +132,7 @@ function Navbar() {
                   scrollToSection('book')
                 }}
               >
-                Book Now
+                Book Demo
               </CTAButton>
             </Motion.div>
           </Motion.div>

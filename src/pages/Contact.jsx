@@ -132,7 +132,7 @@ function Contact() {
               <p>
                 Phone: +1 (555) 013-4521
                 <br />
-                Email: coach@ironcoregym.com
+                Email: coach@gammagym.com
               </p>
             </div>
             <div className="rounded-2xl border border-emerald-500/20 bg-slate-900/80 p-4 text-xs text-slate-400">
