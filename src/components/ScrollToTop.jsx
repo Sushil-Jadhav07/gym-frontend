@@ -20,7 +20,7 @@ function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all flex items-center justify-center z-50"
+      className="fixed bottom-8 right-8 w-12 h-12 transition-colors bg-emerald-500 text-white rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 flex items-center justify-center z-50"
       aria-label="Scroll to top"
     >
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

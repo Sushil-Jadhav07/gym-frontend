@@ -5,7 +5,7 @@ function CTAButton({ children, className = '', variant = 'primary', ...rest }) {
     'inline-flex items-center justify-center rounded-full px-6 py-3 text-sm md:text-base font-semibold tracking-wide transition-colors'
   const styles =
     variant === 'outline'
-      ? 'border border-emerald-400/80 text-emerald-300 hover:bg-emerald-500/10'
+      ? 'border border-emerald-500/80 text-emerald-700 hover:bg-emerald-500/10 dark:text-emerald-300'
       : 'bg-emerald-500 text-slate-950 hover:bg-emerald-400'
 
   return (
