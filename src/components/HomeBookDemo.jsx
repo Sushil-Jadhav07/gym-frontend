@@ -12,9 +12,14 @@ function HomeBookDemo({ bookingForm, handleBookingChange, handleBookingSubmit })
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="px-4 pb-24 pt-10"
+      className="relative px-4 pb-24 pt-10"
     >
-      <div className="mx-auto max-w-6xl rounded-3xl border border-emerald-500/20 bg-gradient-to-r from-emerald-100 via-emerald-50 to-white px-6 py-8 md:px-10 md:py-10 dark:border-emerald-500/30 dark:from-emerald-500/15 dark:via-emerald-400/5 dark:to-slate-950">
+      {/* Grid Pattern Background */}
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full overflow-hidden opacity-50 dark:opacity-30">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] dark:bg-[linear-gradient(to_right,#ffffff20_1px,transparent_1px),linear-gradient(to_bottom,#ffffff20_1px,transparent_1px)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-6xl rounded-3xl border border-emerald-500/20 bg-gradient-to-r from-emerald-100 via-emerald-50 to-white px-6 py-8 md:px-10 md:py-10 dark:border-emerald-500/30 dark:from-emerald-500/15 dark:via-emerald-400/5 dark:to-slate-950">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="space-y-8">
             <div className="space-y-4">

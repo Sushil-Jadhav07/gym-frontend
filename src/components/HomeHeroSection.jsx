@@ -4,8 +4,13 @@ import { fadeUp, staggerContainer } from './MotionWrappers'
 
 function HomeHeroSection({ scrollToSection }) {
   return (
-    <section id="top" className="px-4 pb-20 pt-28 md:pt-32">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:items-start">
+    <section id="top" className="relative overflow-hidden px-4 pb-20 pt-28 md:pt-32">
+      {/* Decorative Background Elements */}
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full opacity-40 dark:opacity-60">
+        <div className="absolute inset-0 bg-[radial-gradient(#10b981_2px,transparent_2px)] [background-size:32px_32px] [mask-image:radial-gradient(circle_at_top_right,black_0%,transparent_70%)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-12 md:flex-row md:items-start">
         <Motion.div
           variants={staggerContainer}
           initial="hidden"

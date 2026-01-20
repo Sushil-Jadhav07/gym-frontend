@@ -10,15 +10,26 @@ function HomeResults() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="px-4 pb-12 pt-4"
+      className="relative px-4 pb-12 pt-4"
     >
-      <div className="mx-auto max-w-6xl space-y-6">
+      {/* Dot Pattern Background */}
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full opacity-60 dark:opacity-30">
+        <div className="absolute inset-0 bg-[radial-gradient(#10b981_2px,transparent_2px)] [background-size:32px_32px] [mask-image:radial-gradient(circle_at_center,black_0%,transparent_80%)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-6xl space-y-6">
         <SectionTitle
           eyebrow="Results"
           title="Gyms That Simplified Their Admin"
           description="From independent studios to multi-location gyms, teams use GymPro to keep operations clear and predictable."
         />
-        <Motion.div variants={staggerContainer} className="grid gap-6 md:grid-cols-3">
+        <Motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid gap-6 md:grid-cols-3"
+        >
           <Motion.div
             variants={cardVariant}
             className="flex flex-col justify-between rounded-2xl border border-emerald-500/10 bg-white p-5 text-sm text-slate-700 shadow-md shadow-slate-200 dark:border-emerald-500/20 dark:bg-slate-900/70 dark:text-slate-300 dark:shadow-black/40"

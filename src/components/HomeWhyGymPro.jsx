@@ -35,15 +35,26 @@ function HomeWhyGymPro() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="px-4 py-20"
+      className="relative px-4 py-20"
     >
-      <div className="mx-auto max-w-6xl space-y-10">
+      {/* Grid Pattern Background */}
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full overflow-hidden opacity-100 dark:opacity-30">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] dark:bg-[linear-gradient(to_right,#ffffff20_1px,transparent_1px),linear-gradient(to_bottom,#ffffff20_1px,transparent_1px)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-6xl space-y-10">
         <SectionTitle
           eyebrow="Why GymPro"
           title="Why Gym Teams Choose Our Dashboard"
           description="Designed with gym owners, managers, and coaches so the admin work finally feels simple."
         />
-        <Motion.div variants={staggerContainer} className="grid gap-6 md:grid-cols-2">
+        <Motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid gap-6 md:grid-cols-2"
+        >
           {whyUsItems.map(item => (
             <Motion.div
               key={item.title}

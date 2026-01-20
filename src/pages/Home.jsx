@@ -4,6 +4,7 @@ import { pageVariant } from '../components/MotionWrappers'
 import HomeHeroSection from '../components/HomeHeroSection'
 import HomeProductPillars from '../components/HomeProductPillars'
 import HomeDashboardModules from '../components/HomeDashboardModules'
+import HomeKeyFeatures from '../components/HomeKeyFeatures'
 import HomeWhyGymPro from '../components/HomeWhyGymPro'
 import HomeResults from '../components/HomeResults'
 import HomeBookDemo from '../components/HomeBookDemo'
@@ -49,6 +50,7 @@ function Home() {
       <HomeHeroSection scrollToSection={scrollToSection} />
       <HomeProductPillars />
       <HomeDashboardModules scrollToSection={scrollToSection} />
+      <HomeKeyFeatures />
       <HomeWhyGymPro />
       <HomeResults />
       <HomeBookDemo

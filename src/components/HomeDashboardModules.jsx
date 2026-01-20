@@ -31,9 +31,14 @@ function HomeDashboardModules({ scrollToSection }) {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="px-4 py-20"
+      className="relative px-4 py-20"
     >
-      <div className="mx-auto max-w-6xl space-y-10">
+      {/* Dot Pattern Background */}
+      <div className="pointer-events-none absolute inset-0 z-0 h-full w-full opacity-60 dark:opacity-30">
+        <div className="absolute inset-0 bg-[radial-gradient(#10b981_2px,transparent_2px)] [background-size:32px_32px] [mask-image:radial-gradient(circle_at_center,black_0%,transparent_80%)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-6xl space-y-10">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <SectionTitle
             eyebrow="Dashboard Modules"
@@ -51,6 +56,9 @@ function HomeDashboardModules({ scrollToSection }) {
         </div>
         <Motion.div
           variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
           className="grid gap-6 md:grid-cols-2 lg:grid-cols-4"
         >
           {servicesPreview.map(card => (
